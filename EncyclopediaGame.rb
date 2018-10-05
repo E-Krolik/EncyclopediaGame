@@ -18,9 +18,9 @@ class Team
 		@game_score +=1
 	end
 	def win
-		puts @team_name + "Your teame wins , good job !!!!!"
+		puts @team_name + "  Your team wins , good job !!!!!"
 		for player in @players
-			puts "Congratulations :" + player + "!!!"
+			puts "Congratulations :  " + player + "!!!"
 		end
 	end
 
@@ -117,7 +117,7 @@ if round_winners.empty?
 	puts " No winners in this round "
 else
 	for team in round_winners
-		puts team.team_name + " win in this round "
+		puts team.team_name + " win this round "
 		team.game_win
 	end
 end
@@ -140,7 +140,7 @@ if game_winners.empty?
 	puts " No winners in this game "
 else
 	for team in game_winners
-		puts team.team_name + " win in this game !!!! "
+		puts team.team_name + " win this game !!!! "
 		team.win
 	end
 end
